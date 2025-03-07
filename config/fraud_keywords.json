@@ -1,0 +1,202 @@
+{
+    "financial": {
+        "description": "金融相关诈骗",
+        "keywords": [
+            {"word": "贷款", "weight": 0.6},
+            {"word": "银行卡", "weight": 0.7},
+            {"word": "解冻", "weight": 0.8},
+            {"word": "账户", "weight": 0.5},
+            {"word": "转账", "weight": 0.7},
+            {"word": "中介费", "weight": 0.8},
+            {"word": "手续费", "weight": 0.7},
+            {"word": "还款", "weight": 0.6},
+            {"word": "利息", "weight": 0.5},
+            {"word": "理财", "weight": 0.6},
+            {"word": "投资", "weight": 0.6},
+            {"word": "股票", "weight": 0.5},
+            {"word": "基金", "weight": 0.5},
+            {"word": "期货", "weight": 0.6},
+            {"word": "信用卡", "weight": 0.7}
+        ],
+        "patterns": [
+            {"pattern": "贷款.*无抵押", "weight": 0.9},
+            {"pattern": "银行卡.*解冻", "weight": 0.9},
+            {"pattern": "转账.*手续费", "weight": 0.9},
+            {"pattern": "低利息.*贷款", "weight": 0.8},
+            {"pattern": "无担保.*放款", "weight": 0.9}
+        ]
+    },
+    "prize": {
+        "description": "中奖诈骗",
+        "keywords": [
+            {"word": "中奖", "weight": 0.8},
+            {"word": "抽奖", "weight": 0.6},
+            {"word": "领奖", "weight": 0.7},
+            {"word": "奖品", "weight": 0.6},
+            {"word": "奖金", "weight": 0.7},
+            {"word": "大奖", "weight": 0.7},
+            {"word": "幸运", "weight": 0.5},
+            {"word": "中了", "weight": 0.6},
+            {"word": "获奖", "weight": 0.7},
+            {"word": "兑奖", "weight": 0.7}
+        ],
+        "patterns": [
+            {"pattern": "恭喜.*中奖", "weight": 0.9},
+            {"pattern": "中奖.*领取", "weight": 0.8},
+            {"pattern": "抽奖.*中了", "weight": 0.8},
+            {"pattern": "奖金.*手续费", "weight": 0.9}
+        ]
+    },
+    "gambling": {
+        "description": "赌博诈骗",
+        "keywords": [
+            {"word": "赌", "weight": 0.8},
+            {"word": "博彩", "weight": 0.9},
+            {"word": "彩票", "weight": 0.7},
+            {"word": "赌场", "weight": 0.9},
+            {"word": "赌博", "weight": 0.9},
+            {"word": "投注", "weight": 0.8},
+            {"word": "下注", "weight": 0.8},
+            {"word": "押注", "weight": 0.8},
+            {"word": "赢钱", "weight": 0.7},
+            {"word": "输钱", "weight": 0.7}
+        ],
+        "patterns": [
+            {"pattern": "稳赢.*投注", "weight": 0.9},
+            {"pattern": "包赢.*彩票", "weight": 0.9},
+            {"pattern": "赌场.*发财", "weight": 0.9}
+        ]
+    },
+    "refund": {
+        "description": "退款诈骗",
+        "keywords": [
+            {"word": "退款", "weight": 0.7},
+            {"word": "退税", "weight": 0.7},
+            {"word": "返利", "weight": 0.8},
+            {"word": "报销", "weight": 0.6},
+            {"word": "补贴", "weight": 0.6},
+            {"word": "补助", "weight": 0.6},
+            {"word": "退还", "weight": 0.7},
+            {"word": "返还", "weight": 0.7},
+            {"word": "退费", "weight": 0.7},
+            {"word": "返现", "weight": 0.8}
+        ],
+        "patterns": [
+            {"pattern": "退款.*验证", "weight": 0.9},
+            {"pattern": "返利.*账户", "weight": 0.8},
+            {"pattern": "退税.*手续", "weight": 0.8}
+        ]
+    },
+    "service": {
+        "description": "客服诈骗",
+        "keywords": [
+            {"word": "客服", "weight": 0.6},
+            {"word": "中心", "weight": 0.5},
+            {"word": "服务", "weight": 0.5},
+            {"word": "热线", "weight": 0.6},
+            {"word": "客户", "weight": 0.5},
+            {"word": "咨询", "weight": 0.5},
+            {"word": "人工", "weight": 0.5},
+            {"word": "在线", "weight": 0.5},
+            {"word": "客户端", "weight": 0.6},
+            {"word": "平台", "weight": 0.5}
+        ],
+        "patterns": [
+            {"pattern": "客服.*核实", "weight": 0.8},
+            {"pattern": "人工.*验证", "weight": 0.8},
+            {"pattern": "客服.*账号", "weight": 0.8}
+        ]
+    },
+    "verification": {
+        "description": "验证码诈骗",
+        "keywords": [
+            {"word": "验证码", "weight": 0.8},
+            {"word": "校验码", "weight": 0.8},
+            {"word": "确认码", "weight": 0.8},
+            {"word": "动态码", "weight": 0.8},
+            {"word": "短信码", "weight": 0.8},
+            {"word": "密码", "weight": 0.7},
+            {"word": "口令", "weight": 0.7},
+            {"word": "安全码", "weight": 0.8}
+        ],
+        "patterns": [
+            {"pattern": "验证码.*告诉", "weight": 0.9},
+            {"pattern": "密码.*核实", "weight": 0.9},
+            {"pattern": "动态码.*发送", "weight": 0.8}
+        ]
+    },
+    "identity": {
+        "description": "身份信息诈骗",
+        "keywords": [
+            {"word": "身份证", "weight": 0.8},
+            {"word": "银行卡", "weight": 0.8},
+            {"word": "社保卡", "weight": 0.7},
+            {"word": "医保卡", "weight": 0.7},
+            {"word": "信用卡", "weight": 0.8},
+            {"word": "储蓄卡", "weight": 0.7},
+            {"word": "账号", "weight": 0.7},
+            {"word": "密码", "weight": 0.7}
+        ],
+        "patterns": [
+            {"pattern": "身份证.*核实", "weight": 0.9},
+            {"pattern": "银行卡.*确认", "weight": 0.9},
+            {"pattern": "账号.*验证", "weight": 0.8}
+        ]
+    },
+    "explicit": {
+        "description": "明显诈骗标识",
+        "keywords": [
+            {"word": "骗", "weight": 0.9},
+            {"word": "诈骗", "weight": 1.0},
+            {"word": "欺骗", "weight": 0.9},
+            {"word": "假冒", "weight": 0.9},
+            {"word": "伪造", "weight": 0.9},
+            {"word": "虚假", "weight": 0.8},
+            {"word": "非法", "weight": 0.8},
+            {"word": "违法", "weight": 0.8},
+            {"word": "套现", "weight": 0.9},
+            {"word": "洗钱", "weight": 0.9}
+        ],
+        "patterns": [
+            {"pattern": "假冒.*官方", "weight": 1.0},
+            {"pattern": "伪造.*证件", "weight": 1.0},
+            {"pattern": "非法.*集资", "weight": 1.0}
+        ]
+    },
+    "emergency": {
+        "description": "紧急情况诈骗",
+        "keywords": [
+            {"word": "紧急", "weight": 0.7},
+            {"word": "急需", "weight": 0.7},
+            {"word": "加急", "weight": 0.7},
+            {"word": "马上", "weight": 0.6},
+            {"word": "立即", "weight": 0.6},
+            {"word": "尽快", "weight": 0.6},
+            {"word": "限时", "weight": 0.7},
+            {"word": "错过", "weight": 0.6}
+        ],
+        "patterns": [
+            {"pattern": "紧急.*转账", "weight": 0.9},
+            {"pattern": "急需.*帮助", "weight": 0.8},
+            {"pattern": "马上.*处理", "weight": 0.8}
+        ]
+    },
+    "threat": {
+        "description": "威胁恐吓诈骗",
+        "keywords": [
+            {"word": "冻结", "weight": 0.8},
+            {"word": "封号", "weight": 0.7},
+            {"word": "处罚", "weight": 0.7},
+            {"word": "违规", "weight": 0.7},
+            {"word": "举报", "weight": 0.7},
+            {"word": "严重", "weight": 0.6},
+            {"word": "后果", "weight": 0.6},
+            {"word": "责任", "weight": 0.6}
+        ],
+        "patterns": [
+            {"pattern": "账号.*冻结", "weight": 0.9},
+            {"pattern": "违规.*处罚", "weight": 0.8},
+            {"pattern": "后果.*严重", "weight": 0.8}
+        ]
+    }
+} 
